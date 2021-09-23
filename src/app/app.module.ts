@@ -7,20 +7,24 @@ import { PagesModule } from './pages/pages.module';
 import { SharedModule } from './shared/shared.module';
 import { AuthModule } from './auth/auth.module';
 import { NopageFoundComponent } from './nopage-found/nopage-found.component';
+import { ChartsModule } from 'ng2-charts';
+
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    NopageFoundComponent
+    NopageFoundComponent,
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     PagesModule,
     SharedModule,
-    AuthModule
+    AuthModule,
+    ChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

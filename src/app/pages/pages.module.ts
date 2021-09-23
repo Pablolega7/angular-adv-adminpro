@@ -5,7 +5,11 @@ import { DashboradComponent } from './dashborad/dashborad.component';
 import { ProgressComponent } from './progress/progress.component';
 import { Grafica1Component } from './grafica1/grafica1.component';
 import { SharedModule } from '../shared/shared.module';
-import { AppRoutingModule } from '../app-routing.module';
+import { FormsModule } from '@angular/forms';
+import { ComponentsModule } from '../components/components.module';
+import { RouterModule } from '@angular/router';
+
+
 
 
 
@@ -14,7 +18,8 @@ import { AppRoutingModule } from '../app-routing.module';
     PagesComponent,
     DashboradComponent,
     ProgressComponent,
-    Grafica1Component
+    Grafica1Component,
+    
   ],
   exports:[
     PagesComponent,
@@ -25,7 +30,9 @@ import { AppRoutingModule } from '../app-routing.module';
   imports: [
     CommonModule,
     SharedModule,
-    AppRoutingModule
+    FormsModule,
+    ComponentsModule,
+    RouterModule,
   ],
 })
 export class PagesModule { }
