@@ -8,6 +8,7 @@ import { SharedModule } from '../shared/shared.module';
 import { FormsModule } from '@angular/forms';
 import { ComponentsModule } from '../components/components.module';
 import { RouterModule } from '@angular/router';
+import { AccountSettingsComponent } from './accountSettings/account-settings.component';
 
 
 
@@ -19,13 +20,14 @@ import { RouterModule } from '@angular/router';
     DashboradComponent,
     ProgressComponent,
     Grafica1Component,
-    
+    AccountSettingsComponent,   
   ],
   exports:[
     PagesComponent,
     DashboradComponent,
     ProgressComponent,
-    Grafica1Component
+    Grafica1Component,
+    AccountSettingsComponent
   ],
   imports: [
     CommonModule,
